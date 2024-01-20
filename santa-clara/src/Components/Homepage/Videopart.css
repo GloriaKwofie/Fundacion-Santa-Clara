@@ -1,0 +1,36 @@
+/* Customize styling as needed */
+.video-page-container {
+    display: flex;
+    height: 60vh; /* Adjust the height based on your requirements */
+  }
+  
+  .video-section,
+  .slideshow-section {
+    flex: 1;
+    overflow: hidden;
+    background-color: beige;
+  }
+  
+  /* Style for the slides in the slideshow */
+  .slide {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .slide img {
+    width: 720px;
+    height: 300px; /* Adjust the max height of the images */
+    margin-bottom: 10px;
+  }
+  
+  @media (min-width: 968px) {
+    .video-page-container {
+        display: flex;
+      width: 100%; /* Display sections side by side on larger screens */
+    }
+  
+    .video-section,
+    .slideshow-section {
+      flex: 1;
+    }
+  }
