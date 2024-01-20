@@ -1,6 +1,5 @@
 import './App.css';
-import Navbar from '../src/Navigation/Navi'
-import Navi from '../src/Navigation/Navi';
+import Navi from '../src/Components/Navigation/Navi';
 
 function App() {
   return (

@@ -1,0 +1,115 @@
+/* Navbar.css */
+
+/* Custom styling for the navbar */
+.nav-logo{
+  width: 150px;
+  height: 80px;
+  margin-left: 50px;
+}
+/* Navbar.css */
+
+/* Custom styling for the navbar */
+.navbar {
+  background-color: #fff; /* Set background color to white */
+  border-radius: 5px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Custom styling to make the navbar full-width without spacing and add background color to titles */
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Align titles to the right */
+  align-items: center;
+  margin-right: 20px; /* Add some right margin */
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-dropdown {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav .nav-link {
+  text-align: center;
+  background-color: #50b675; /* Add your desired background color */
+  color: #fff; /* Set text color to contrast with the background */
+  border-radius: 5px; /* Add border radius */
+  height: 50px; /* Set a fixed height for uniformity */
+  display: flex;
+  align-items: center; /* Vertically center text within the fixed height */
+  margin-right: 20px; /* Add right margin between titles */
+  padding: 20px;
+  font-weight: 500;
+
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #2d664e; /* Change background color on hover */
+}
+
+.navbar-nav .nav-dropdown {
+  color: #fff; /* Set text color for dropdown */
+  border-radius: 5px; /* Add border radius */
+}
+
+.nav-dropdown:hover {
+  color: #2d664e;
+}
+
+.navbar-toggler {
+  margin-right: 15px;
+}
+.dd-list:hover{
+background-color: #2d664e;
+color: white;
+font-weight: 500;
+}
+
+.navbar-brand {
+  margin-right: auto; /* Push the logo to the left as much as possible */
+}
+
+/* Add margin between titles and donate button */
+.navbar-nav .ml-lg-2 {
+  margin-left: 50px;
+  font-size: 22px;
+  margin-left: 22px;
+  background-color: rgb(207, 163, 163);
+  color: rgb(5, 140, 57);
+  font-weight: 600;
+}
+
+.navbar-nav .ml-lg-2:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(5, 140, 57);
+}
+
+@media (max-width: 968px) {
+  .navbar-nav .nav-link  {
+    width: 100%;
+    background-color: #50b675;
+    text-align: center;
+    border-radius: 0px;
+  }
+
+  .nav-dropdown{
+    width: 100%;
+    background-color: #50b675;
+    align-items: center;
+    border-radius: 0px;
+    padding-left: 0px;
+
+  }
+  .navbar-nav .ml-lg-2 {
+ background-color: rgb(255, 255, 255);
+ color: #50b675;
+ margin-top: 15px;
+  }
+  .navbar-nav .ml-lg-2 :hover{
+    background-color: rgb(191, 40, 40);
+    color: #50b675;
+  
+  }
+}
+
