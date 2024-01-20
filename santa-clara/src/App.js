@@ -2,6 +2,7 @@ import './App.css';
 import Navi from '../src/Components/Navigation/Navi';
 import Homepage from './Components/Homepage/Homepage';
 
+
 function App() {
   return (
     <div className="App">

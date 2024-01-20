@@ -1,16 +1,18 @@
 /* Customize styling as needed */
-.noticias-card-container {
+.proyectos-container {
     text-align: center;
     padding: 20px;
   }
   
-  .noticias-card-list {
+  .proyectos-card-list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
   
-  .noticias-card {
-    width: 30%; /* Set width to 30% */
+  .proyecto-card {
+    width: 22%; /* Set width to 30% */
+    height: 345px;
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -18,42 +20,42 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Hide overflowing content */
     position: relative;
+    text-decoration: none;
     transition: transform 0.3s ease-in-out; /* Add transition effect for smoother movement */
   }
   
-  .noticias-card:hover {
+  .proyecto-card:hover {
     transform: translateY(-5px); /* Move the card up by 5px on hover */
   }
   
-  .noticias-card img {
-    width: 400px;
-    height: auto;
+  .proyecto-card img {
+    width: 280px;
+    height: 260px;
     border-radius: 5px;
+    align-items: center;
     transition: transform 0.3s ease-in-out; /* Add transition effect for smoother movement */
   }
   
-  .noticias-card:hover img {
+  .proyecto-card:hover img {
     transform: translateY(-10px); /* Move the image up by 10px on hover */
   }
   
   h1 {
     color: #333;
-    background-color: rgb(91, 211, 175);
-    padding: 20px;
-    font-weight: 600;
-    font-size: 50px;
   }
-  
+
+  h2{
+    color: rgb(66, 157, 66);
+    margin-top: 10px;
+    background-color: #d6d3d3;
+    padding: 3px;
+    border-radius: 3px;
+  }
   @media (max-width: 968px) {
-    .noticias-card-list {
-        display: flex;
-        flex-direction: column;
-    }
-    .noticias-card  {
+    .proyecto-card {
       width: 100%; /* Make cards take the full width on small screens */
-   
     }
-    .noticias-card img{
+    .proyecto-card img{
         width: 100%;
     }
 }
