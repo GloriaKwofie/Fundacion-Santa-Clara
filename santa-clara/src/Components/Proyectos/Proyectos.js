@@ -24,49 +24,49 @@ const Proyectos = () => {
       id: 1,
       image: plataforma,
       title: 'Plataforma',
-      path: '/proyecto/1', // Add the path for the first project
+      path: '/plataforma', // Add the path for the first project
     },
     {
       id: 2,
       image: resi,
       title: 'Residencia',
-      path: '/proyecto/2', // Add the path for the second project
+      path: '/resi', // Add the path for the second project
     },
     {
       id: 3,
       image: pisos,
       title: 'Pisos',
-      path: '/proyecto/3', // Add the path for the third project
+      path: '/pisos', // Add the path for the third project
     },
     {
         id: 4,
         image: taller,
         title: 'Taller',
-        path: '/proyecto/3', // Add the path for the third project
+        path: '/taller', // Add the path for the third project
       },
       {
         id: 5,
         image: duchas,
         title: 'Duchas',
-        path: '/proyecto/3', // Add the path for the third project
+        path: '/duchas', // Add the path for the third project
       },
       {
         id: 6,
         image: cosidor,
         title: 'Cosidor',
-        path: '/proyecto/3', // Add the path for the third project
+        path: '/cosidor', // Add the path for the third project
       },
       {
         id: 7,
         image: huerto,
         title: 'Huerto ecológico',
-        path: '/proyecto/3', // Add the path for the third project
+        path: '/huerto', // Add the path for the third project
       },
       {
         id: 8,
         image: ofta,
         title: 'Oftamologia',
-        path: '/proyecto/3', // Add the path for the third project
+        path: '/ofta', // Add the path for the third project
       },
     // Add more projects as needed
   ];

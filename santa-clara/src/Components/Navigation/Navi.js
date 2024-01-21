@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "wouter";
 import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
 import './Navbar.css';
 import logo from '../Images/logo  fsantaclara.png'
@@ -19,9 +20,9 @@ const Navi = () => {
       <Navbar.Toggle aria-controls="navbar" />
       <Navbar.Collapse id="navbar">
         <Nav className="ml-auto">
-          <Nav.Link href="#">HOME</Nav.Link>
-          <Nav.Link href="#">TRANSPARENCIA</Nav.Link>
-          <Nav.Link href="#">PROYECTOS</Nav.Link>
+          <Link href="/"><Nav.Link href="#">HOME</Nav.Link></Link>
+          <Link href="/tranparencia"><Nav.Link href="#">TRANSPARENCIA</Nav.Link></Link>
+          <Link href="/proyectos"><Nav.Link href="#">PROYECTOS</Nav.Link></Link>
           <NavDropdown title="QUIÉNES SOMOS " className="nav-dropdown">
             <NavDropdown.Item className='dd-list' href="#">LA FUNDACIÓN</NavDropdown.Item>
             <NavDropdown.Item className='dd-list' href="#">OBJECTIVOS</NavDropdown.Item>

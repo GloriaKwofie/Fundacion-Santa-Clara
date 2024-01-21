@@ -1,4 +1,5 @@
 import './App.css';
+import { Route } from "wouter";
 import Navi from '../src/Components/Navigation/Navi';
 import Homepage from './Components/Homepage/Homepage';
 
@@ -8,8 +9,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navi/>
-        <Homepage/>
-      </header>
+
+        <Route path="/" component={Homepage}/>
+          </header>
     </div>
   );
 }
