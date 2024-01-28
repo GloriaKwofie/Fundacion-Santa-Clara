@@ -36,7 +36,7 @@
     transform: translateY(-10px); /* Move the image up by 10px on hover */
   }
   
-  h1 {
+  .noticia-title {
     color: #333;
     background-color: rgb(91, 211, 175);
     padding: 20px;

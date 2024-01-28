@@ -24,18 +24,18 @@ const Navi = () => {
           <Link href="/tranparencia"><Nav.Link href="#">TRANSPARENCIA</Nav.Link></Link>
           <Link href="/proyectos"><Nav.Link href="#">PROYECTOS</Nav.Link></Link>
           <NavDropdown title="QUIÉNES SOMOS " className="nav-dropdown">
-            <NavDropdown.Item className='dd-list' href="#">LA FUNDACIÓN</NavDropdown.Item>
-            <NavDropdown.Item className='dd-list' href="#">OBJECTIVOS</NavDropdown.Item>
-            <NavDropdown.Item className='dd-list' href="#">EQUIPO TÉCNICO</NavDropdown.Item>
+            <NavDropdown.Item className='dd-list' href="/fundacion">LA FUNDACIÓN</NavDropdown.Item>
+            <NavDropdown.Item className='dd-list' href="/objectivos">OBJECTIVOS</NavDropdown.Item>
+            <NavDropdown.Item className='dd-list' href="/equipo">EQUIPO TÉCNICO</NavDropdown.Item>
 
           </NavDropdown>
           <NavDropdown title="¿QUIERES PARTICIPAR?" className="nav-dropdown">
-            <NavDropdown.Item className='dd-list' href="#">DONAR</NavDropdown.Item>
-            <NavDropdown.Item className='dd-list' href="#">VOLUNTARIOS</NavDropdown.Item>
-            <NavDropdown.Item className='dd-list' href="#">TIENDA SOLIDARIA</NavDropdown.Item>
+            <NavDropdown.Item className='dd-list' href="/donar">DONAR</NavDropdown.Item>
+            <NavDropdown.Item className='dd-list' href="/voluntarios">VOLUNTARIOS</NavDropdown.Item>
+            <NavDropdown.Item className='dd-list' href="/taller">TIENDA SOLIDARIA</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="#">CONTACTO</Nav.Link>
-          <Button variant="success" className="ml-lg-2">DONAR</Button>
+          <Nav.Link href="/contacto">CONTACTO</Nav.Link>
+          <Link href="/donar"><Button variant="success" className="ml-lg-2">DONAR</Button></Link>
         </Nav>
       </Navbar.Collapse>
   </Navbar>

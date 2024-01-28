@@ -2,6 +2,7 @@ import './App.css';
 import { Route } from "wouter";
 import Navi from '../src/Components/Navigation/Navi';
 import Homepage from './Components/Homepage/Homepage';
+import Plataforma from './Components/Pages/Plataforma/Plataforma';
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
 
         <Route path="/" component={Homepage}/>
           </header>
+          <Route path="/plataforma" component={Plataforma}/>
+
     </div>
   );
 }

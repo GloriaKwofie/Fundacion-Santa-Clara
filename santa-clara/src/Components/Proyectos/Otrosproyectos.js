@@ -33,7 +33,7 @@ const Otrosproyectos = () => {
 
   return (
     <div className="proyectos-container">
-      <h1>Otros Proyectos</h1>
+      <h1 className='proyectos-title'>Otros Proyectos</h1>
       <div className="proyectos-card-list">
         {proyectos.map((proyecto) => (
           <Link to={proyecto.path} key={proyecto.id} className="proyecto-card">

@@ -27,7 +27,7 @@ const Noticias = () => {
   
     return (
       <div className="noticias-card-container">
-        <h1>Ultimas Noticias</h1>
+        <h1 className='noticia-title'>Ultimas Noticias</h1>
         <div className="noticias-card-list">
           {noticias.map((noticia) => (
             <div className="noticias-card" key={noticia.id}>

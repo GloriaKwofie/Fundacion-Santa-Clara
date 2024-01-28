@@ -1,0 +1,44 @@
+/* Add your existing styles for the Plataforma component here */
+.plat-title{
+    font-size: 60px;
+}
+.plat-title-section {
+    background-image: url('../../Images/plataforma.webp');
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .plat-intro-section {
+    padding: 20px;
+  }
+  
+  .plat-cards-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .plat-images-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .plat-images-section img {
+    width: 48%;
+    margin: 1%;
+  }
+  
+  @media (max-width: 768px) {
+    .plat-title-section {
+      padding: 20px;
+    }
+  
+    .plat-images-section img {
+      width: 100%;
+      margin: 2% 0;
+    }
+  }
+  

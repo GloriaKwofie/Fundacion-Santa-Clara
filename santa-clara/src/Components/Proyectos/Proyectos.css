@@ -40,15 +40,19 @@
     transform: translateY(-10px); /* Move the image up by 10px on hover */
   }
   
-  h1 {
-    color: #333;
+.proyectos-title {
+  color: #333;
+  background-color: rgb(91, 211, 175);
+  padding: 20px;
+  font-weight: 600;
+  font-size: 50px;
   }
 
   h2{
-    color: rgb(66, 157, 66);
+    color: rgb(50, 59, 50);
     margin-top: 10px;
     background-color: #d6d3d3;
-    padding: 3px;
+    padding: 4px;
     border-radius: 3px;
   }
   @media (max-width: 968px) {
