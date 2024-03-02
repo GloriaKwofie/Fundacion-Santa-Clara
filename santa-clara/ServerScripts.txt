@@ -1,0 +1,42 @@
+La base de datos se llama santa_clara
+
+Creacion de la tabla news
+
+CREATE TABLE IF NOT EXISTS news (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    subtitle VARCHAR(255) NOT NULL,
+    main_img VARCHAR(255),
+    second_img VARCHAR(255),
+    third_img VARCHAR(255),
+    body TEXT NOT NULL,
+    carrousel1 VARCHAR(255),
+    carrousel2 VARCHAR(255),
+    carrousel3 VARCHAR(255),
+    carrousel4 VARCHAR(255),
+    ubicacion VARCHAR(255) NOT NULL
+);
+
+Insersion de datos en la tabla news
+
+INSERT INTO tu_tabla (title, subtitle, main_img, second_img, third_img, body, carrousel1, carrousel2, carrousel3, carrousel4, ubicacion)
+VALUES (
+  'Misa en la Sagrada Familia',
+  'Un Concierto Histórico para la Paz: La Música como Puente de Solidaridad hacia Ucrania',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/EVENTO%20SAGRADA%20FAMILIA%202023-87.jpg',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/EVENTO%20SAGRADA%20FAMILIA%202023-154.jpg',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/EVENTO%20SAGRADA%20FAMILIA%202023-17.jpg',
+  'El 12 de diciembre de 2023, el escenario de la emblemática Sagrada Familia de Barcelona se vistió de solidaridad y esperanza. La "Misa en la Sagrada Familia", un evento organizado por Sor Lucía Caram junto a la Fundació del Convent de Santa Clara y el empresario Enrique Tomás, logró reunir no solo a la comunidad local, sino también a almas generosas de todo el mundo, en un concierto benéfico histórico para la Paz. El propósito no era otro que recaudar fondos vitales para la construcción de un hospital de campaña y enviar ayuda humanitaria a Ucrania, país azotado por la guerra.
+
+El evento fue bendecido con la presencia de médicos y soldados ucranianos, quienes junto a funcionarios del gobierno y una multitud de fieles, se unieron bajo las bóvedas de la obra maestra de Gaudí. El apoyo del Papa Francisco se sintió no solo en palabras, sino también en el espíritu que impregnaba el lugar. Fue una noche en la que la música se convirtió en un vehículo de unión y la "Misa Criolla" de Ariel Ramírez resonó en los corazones de los presentes. Esta obra, que trasciende las barreras del idioma y la cultura con su fusión de ritmos folclóricos y textos litúrgicos, elevó la ceremonia a un plano de conmovedora espiritualidad.
+
+La elección de la "Misa Criolla" para esta ocasión no fue casual; la obra de Ramírez, con su profunda raíz en el folclore sudamericano y su mensaje universal de paz y hermandad, fue el complemento perfecto para una noche dedicada a la solidaridad con Ucrania. La interpretación de la misa, llena de fervor y pasión, se convirtió en un símbolo de la resiliencia y la esperanza de un pueblo que busca construir la paz en medio del conflicto.
+
+Mientras la música llenaba cada rincón del templo, las donaciones fluían generosamente. El balance de la noche fue un éxito rotundo: se lograron recaudar fondos significativos para la causa. Este acto de generosidad colectiva demostró que la comunidad global puede unirse y actuar como una sola para aliviar el sufrimiento de aquellos que más lo necesitan. Con la "Misa en la Sagrada Familia", Barcelona se convirtió en un faro de esperanza, proyectando un mensaje de solidaridad que, sin duda, trascenderá en el tiempo y seguirá inspirando acciones de compasión y apoyo mutuo.',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/EVENTO%20SAGRADA%20FAMILIA%202023-87.jpg',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/EVENTO%20SAGRADA%20FAMILIA%202023-104.jpg',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/231212-PMacM-1710.jpg',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/231212-PMacM-1882.jpg',
+  'Barcelona, España'
+);
+
