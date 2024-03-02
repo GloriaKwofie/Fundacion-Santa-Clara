@@ -1,44 +1,40 @@
-import React from 'react'
-import misa from '../Images/Sagrada-familia.jpg'
-import './Noticias.css'
-
+import React, { useState, useEffect } from "react";
+import "./Noticias.css";
 
 const Noticias = () => {
-    const noticias = [
-      {
-        id: 1,
-        image: misa, // Replace with the path to your image
-        title: 'Noticia 1',
-        description: 'Descripción para la Noticia 1.',
-      },
-      {
-        id: 2,
-        image: misa, // Replace with the path to your image
-        title: 'Noticia 2',
-        description: 'Descripción para la Noticia 2.',
-      },
-      {
-        id: 3,
-        image: misa,
-        title: 'Noticia 3',
-        description: 'Descripción para la Noticia 3.',
-      },
-    ];
-  
-    return (
-      <div className="noticias-card-container">
-        <h1 className='noticia-title'>Ultimas Noticias</h1>
-        <div className="noticias-card-list">
-          {noticias.map((noticia) => (
-            <div className="noticias-card" key={noticia.id}>
-              <img src={noticia.image} alt={noticia.title} />
-              <h2>{noticia.title}</h2>
-              <p>{noticia.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  };
+  const [noticias, setNoticias] = useState([]);
 
-export default Noticias
+  useEffect(() => {
+    const fetchNoticias = async () => {
+      try {
+        const response = await fetch("http://localhost:3001/news");
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        setNoticias(data);
+      } catch (error) {
+        console.error("No se pudo obtener las noticias:", error);
+      }
+    };
+
+    fetchNoticias();
+  }, []);
+
+  return (
+    <div className="noticias-card-container">
+      <h1 className="noticia-title">Ultimas Noticias</h1>
+      <div className="noticias-card-list">
+        {noticias.map((noticia) => (
+          <div className="noticias-card" key={noticia.id}>
+            <img src={noticia.carrousel1} alt={noticia.title} />
+            <h2>{noticia.title}</h2>
+            <p>{noticia.subtitle}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Noticias;
