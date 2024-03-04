@@ -1,9 +1,8 @@
-import Navi from "../Navigation/Navi";
-
+import Carrousel from "./Carrousel";
 const NewsPage = () => {
   return (
     <>
-      <Navi />
+      <Carrousel />
     </>
   );
 };

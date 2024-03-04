@@ -20,6 +20,15 @@
     position: relative;
     transition: transform 0.3s ease-in-out; /* Add transition effect for smoother movement */
   }
+
+  .noticias-card a, 
+.noticias-card a:link,
+.noticias-card a:visited,
+.noticias-card a:hover, 
+.noticias-card a:active { 
+  text-decoration: none; 
+  color: inherit;
+}
   
   .noticias-card:hover {
     transform: translateY(-5px); /* Move the card up by 5px on hover */
@@ -43,6 +52,52 @@
     font-weight: 600;
     font-size: 50px;
   }
+
+  /*Carrousel*/
+  .carrousel-container {
+    position: relative;
+  }
+  
+  .carrousel-scroll-container {
+    display: flex;
+    flex-wrap: nowrap; /* Asegura que todas las imágenes estén en una sola fila */
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Opcional: para un efecto de 'snap' al desplazarse */
+  }
+  
+  .carrousel-image-container {
+    flex: 0 0 100vw; 
+    height: 40vw;
+    position: relative; 
+    display: flex;
+    flex-direction: row; 
+  }
+  
+  .carrousel-image-container img {
+    width: 100vw; 
+    height: auto; 
+    object-fit: cover; 
+  }
+  
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    user-select: none; /*evita que el texto de la flecha sea seleccionable*/
+  }
+  
+  .fa-arrow-left {
+    left: 5vw;
+  }
+  
+  .fa-arrow-right {
+    right: 5vw;
+  }
+
   
   @media (max-width: 968px) {
     .noticias-card-list {
@@ -56,4 +111,8 @@
     .noticias-card img{
         width: 100%;
     }
+    .carrousel-image-container {
+      height: 55vw;
+    }
+    
 }

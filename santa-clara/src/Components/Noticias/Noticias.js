@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Noticias.css";
+import { Link } from "wouter";
 
 const Noticias = () => {
   const [noticias, setNoticias] = useState([]);
@@ -27,9 +28,11 @@ const Noticias = () => {
       <div className="noticias-card-list">
         {noticias.map((noticia) => (
           <div className="noticias-card" key={noticia.id}>
-            <img src={noticia.carrousel1} alt={noticia.title} />
-            <h2>{noticia.title}</h2>
-            <p>{noticia.subtitle}</p>
+            <Link to="/News">
+              <img src={noticia.carrousel1} alt={noticia.title} />
+              <h2>{noticia.title}</h2>
+              <p>{noticia.subtitle}</p>
+            </Link>
           </div>
         ))}
       </div>
