@@ -1,28 +1,11 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import "./Noticias.css";
 
-const Carrousel = () => {
-  const [images, setImage] = useState([]);
+const Carrousel = ({ images }) => {
   const scrollContainerRef = useRef();
-
-  useEffect(() => {
-    const fetchImage = async () => {
-      try {
-        const response = await fetch("http://localhost:3001/news");
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        setImage(data);
-      } catch (error) {
-        console.error("No se pudo obtener las noticias:", error);
-      }
-    };
-
-    fetchImage();
-  }, []);
+  console.log(images);
 
   const handleLeftClick = () => {
     if (scrollContainerRef.current) {
@@ -54,10 +37,7 @@ const Carrousel = () => {
         <div ref={scrollContainerRef} className="carrousel-scroll-container">
           {images.map((image, index) => (
             <div className="carrousel-image-container" key={index}>
-              <img src={image.carrousel1} alt={`Imagen ${index}-1`} />
-              <img src={image.carrousel2} alt={`Imagen ${index}-2`} />
-              <img src={image.carrousel3} alt={`Imagen ${index}-3`} />
-              <img src={image.carrousel4} alt={`Imagen ${index}-4`} />
+              <img src={image} alt={`Imagen del carrousel ${index}`} />
             </div>
           ))}
         </div>

@@ -14,7 +14,7 @@ function App() {
         <Route path="/" component={Homepage} />
       </header>
       <Route path="/plataforma" component={Plataforma} />
-      <Route path="/news" component={NewsPage} />
+      <Route path="/news/:id" component={NewsPage} />
     </div>
   );
 }
