@@ -59,5 +59,20 @@ Mientras la música llenaba cada rincón del templo, las donaciones fluían gene
   'Barcelona, España'
 );
 
+INSERT INTO news (title, subtitle, carrousel1, second_img, third_img, body, carrousel2, carrousel3, carrousel4, ubicacion)
+VALUES (
+  'Lanzamiento del Libro 'Invitados a Reconstruir': Un Llamado a la Solidaridad con Ucrania',
+  'Una obra que profundiza en la guerra de Ucrania y la importancia de la compasión en tiempos de conflicto',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/libro.jpeg',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/libro.jpg',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/libro3.jpg',
+  'El reciente lanzamiento del libro "Invitados a Reconstruir: Ucrania la guerra y la compasión", escrito por Sor Lucía Caram, ha reunido a varias personalidades influyentes para hablar sobre la situación en Ucrania. La ministra de Defensa, Margarita Robles, destacó durante el evento la justicia de la causa ucraniana y la necesidad de enfrentar regímenes autoritarios como el de Putin en Rusia.
 
+Además, figuras como Juan Carlos Cruz, Henry Kwofie y Masala contribuyeron con sus perspectivas únicas sobre la guerra, subrayando la importancia de apoyar los esfuerzos de paz y la ayuda humanitaria. Cada uno de ellos, desde su experiencia y visión, reforzó el mensaje central del libro: la urgencia de solidarizarse con Ucrania y la importancia de la compasión en tiempos de conflicto.
 
+La obra de Sor Lucía Caram no solo narra los hechos del conflicto ucraniano, sino que también plantea una reflexión profunda sobre la respuesta internacional ante la guerra. Hace un llamado a la acción, enfatizando la importancia de la ayuda humanitaria y la necesidad de una solución pacífica. A través de sus páginas, "Invitados a Reconstruir" se convierte en una plataforma para entender mejor la crisis en Ucrania y para movilizar a la sociedad en apoyo a los esfuerzos por restaurar la paz y brindar alivio a las víctimas del conflicto.',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/libro4.jpg',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/libro5.jpg',
+  'https://raw.githubusercontent.com/GloriaKwofie/Fundacion-Santa-Clara/main/santa-clara/images/libro.jpg',
+  'Barcelona, España'
+);
