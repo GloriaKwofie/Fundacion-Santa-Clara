@@ -28,7 +28,7 @@ const Noticias = () => {
       <div className="noticias-card-list">
         {noticias.map((noticia) => (
           <div className="noticias-card" key={noticia.id}>
-            <Link to="/News">
+            <Link to={`/News/${noticia.id}`}>
               <img src={noticia.carrousel1} alt={noticia.title} />
               <h2>{noticia.title}</h2>
               <p>{noticia.subtitle}</p>
