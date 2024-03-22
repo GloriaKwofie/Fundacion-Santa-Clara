@@ -4,6 +4,7 @@ import Navi from "../src/Components/Navigation/Navi";
 import Homepage from "./Components/Homepage/Homepage";
 import Plataforma from "./Components/Pages/Plataforma/Plataforma";
 import NewsPage from "./Components/Noticias/NewsPage";
+import Cosidor from "./Components/Pages/Cosidor/Cosidor";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </header>
       <Route path="/plataforma" component={Plataforma} />
       <Route path="/news/:id" component={NewsPage} />
+      <Route path="/cosidor" component={Cosidor} />
     </div>
   );
 }
