@@ -60,14 +60,14 @@
   
   .carrousel-scroll-container {
     display: flex;
-    flex-wrap: nowrap; /* Asegura que todas las imágenes estén en una sola fila */
-    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
-    scroll-snap-type: x mandatory; /* Opcional: para un efecto de 'snap' al desplazarse */
+    flex-wrap: nowrap; 
+    overflow-x: hidden; 
+    scroll-snap-type: x mandatory;
   }
   
   .carrousel-image-container {
     flex: 0 0 100vw; 
-    height: 40vw;
+    height: 60vw;
     position: relative; 
     display: flex;
     flex-direction: row; 
@@ -115,4 +115,8 @@
       height: 55vw;
     }
     
+    .arrow {
+      font-size: 25px;
+      top: 40%;
+    }
 }

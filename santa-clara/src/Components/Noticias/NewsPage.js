@@ -25,21 +25,27 @@ const NewsPage = () => {
     };
 
     fetchNoticia();
-  }, [params.id]); // Dependencia en el ID de la ruta
+  }, [params.id]);
 
   return (
     <>
-      {noticia && (
-        <Carrousel
-          images={[
-            noticia.carrousel1,
-            noticia.carrousel2,
-            noticia.carrousel3,
-            noticia.carrousel4,
-          ]}
-        />
+      {noticia ? (
+        <>
+          <Carrousel
+            images={[
+              noticia.carrousel1,
+              noticia.carrousel2,
+              noticia.carrousel3,
+              noticia.carrousel4,
+            ]}
+          />
+          <h1>{noticia.title}</h1>
+          <h2>{noticia.subtitle}</h2>
+          <p>{noticia.body}</p>
+        </>
+      ) : (
+        <p>Cargando noticia...</p>
       )}
-      {/* ... otros detalles de la noticia ... */}
     </>
   );
 };
